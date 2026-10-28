@@ -1,67 +1,120 @@
 # AI-Powered Financial Audit & Expense Intelligence Platform
 
-A quick-start portfolio MVP that screens expense claims for potential audit review using:
-- Exact-match duplicate candidate detection
-- Configurable expense-category policy limits
-- Isolation Forest anomaly screening on transaction amounts
-- Transparent risk scores and review reasons
-- Streamlit dashboard, charts, CSV upload and flagged-report export
+An interactive financial expense auditing platform built with Python and Streamlit to help identify unusual transactions, monitor expense policy violations, detect potential duplicates, and prioritize transactions for review.
 
-## Run locally
+## Live Demo
 
-### 1. Create and activate a virtual environment
+**[Launch the Financial Audit Dashboard](https://financial-audit-dashboard-33kgsuzwegmsldna6kotn.streamlit.app/)**
 
-Windows PowerShell:
-```powershell
-py -m venv .venv
-.\.venv\Scripts\Activate.ps1
-```
+## Overview
 
-macOS/Linux:
-```bash
-python3 -m venv .venv
-source .venv/bin/activate
-```
+Reviewing expense transactions manually can be time-consuming. This project combines data analytics, rule-based auditing, and machine-learning-based anomaly screening in an interactive dashboard.
 
-### 2. Install dependencies
-```bash
-python -m pip install --upgrade pip
-pip install -r requirements.txt
-```
+Users can upload expense data, configure policy limits, explore flagged transactions, and export filtered results for further investigation.
 
-### 3. Start the app
-```bash
-streamlit run app.py
-```
-It should open in your browser. If not, open the local URL printed in the terminal.
+## Key Features
 
-## CSV format
+- **Expense Analytics:** Explore transaction records and spending patterns through interactive metrics and visualizations.
+- **Policy Monitoring:** Flag expenses that exceed configurable category limits.
+- **Duplicate Detection:** Identify potentially duplicated transactions for further review.
+- **Anomaly Detection:** Apply an Isolation Forest model to screen for unusual expense patterns.
+- **Risk-Based Review:** Assign risk indicators and prioritize transactions that may need closer inspection.
+- **Interactive Filtering:** Narrow the review queue using available transaction filters.
+- **CSV Upload and Export:** Analyze uploaded expense datasets and export filtered review results.
 
-Required columns:
-`expense_id, employee_id, expense_date, merchant, category, amount, currency, description`
+## Technology Stack
 
-Use the included `sample_expenses.csv` as the example. Column names are normalised to lowercase. Use only synthetic, public, or explicitly authorised data. Never upload confidential employer/client data.
+- **Language:** Python
+- **Dashboard:** Streamlit
+- **Data Processing:** Pandas
+- **Machine Learning:** Scikit-learn
+- **Visualization:** Streamlit charts and data visualizations
+- **Data Format:** CSV
 
-## How the screening works
+## Getting Started
 
-1. Duplicate candidate: same employee, date, merchant and amount.
-2. Policy check: amount exceeds the configurable category limit.
-3. Anomaly screening: Isolation Forest identifies unusual amounts when there are enough rows.
-4. Risk score: adds rule-based points (duplicate 40, policy 30, anomaly 20, data-quality issue 25), capped at 100.
+### Prerequisites
 
-These are screening heuristics, not proof of fraud or a calibrated probability. Thresholds are illustrative and should be adapted to an actual organisation's policies.
+- Python installed on your computer
+- Git installed
+- A terminal or command prompt
 
-## Before publishing to GitHub
+### Installation
 
-- Replace sample data with a clearly labelled synthetic/public dataset.
-- Add screenshots of the dashboard.
-- Add tests for duplicate detection, policy limits and invalid data.
-- Add a short architecture/methodology section and known limitations.
-- Do not claim business savings, accuracy, or fraud detection performance unless you measured it.
+1. Clone the repository:
 
-## Suggested next improvements
+   ```bash
+   git clone https://github.com/riyabajaj-23/financial-audit-dashboard.git
+   ```
 
-- Split train/demo data and evaluate anomaly flags with labelled synthetic scenarios.
-- Add pytest tests and CI.
-- Add SQL storage or FastAPI if time permits.
-- Add receipt/document parsing only after the core screening workflow is reliable.
+2. Open the project folder:
+
+   ```bash
+   cd financial-audit-dashboard
+   ```
+
+3. Create and activate a virtual environment (optional but recommended):
+
+   **Windows PowerShell**
+   ```powershell
+   python -m venv .venv
+   .\.venv\Scripts\Activate.ps1
+   ```
+
+4. Install the required packages:
+
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. Start the dashboard:
+
+   ```bash
+   streamlit run app_redesigned.py
+   ```
+
+If your repository's final application entry point is `app.py` instead, use `streamlit run app.py`.
+
+## Dataset
+
+The repository includes a sample expense dataset for demonstrating the dashboard. Users can also upload compatible CSV files containing expense transaction records.
+
+Use synthetic or appropriately anonymized financial data for demonstrations.
+
+## Important Note
+
+This application is designed as an expense-auditing and decision-support prototype. Anomaly flags and risk indicators are signals for human review, not proof of fraud or financial misconduct.
+
+## Future Enhancements
+
+- Integrate database-backed expense records.
+- Add authentication and role-based access control.
+- Develop more detailed audit reports.
+- Track historical spending patterns and risk trends.
+- Evaluate anomaly detection using labeled transaction data.
+
+## Author
+
+**Riya Bajaj**
+
+[GitHub Profile](https://github.com/riyabajaj-23)
+
+## 📸 Project Screenshots
+
+### 1. Landing Page
+![Financial Audit Platform Landing Page](screenshots/landing-page.png)
+
+### 2. Dashboard Overview
+![Expense Audit Dashboard Overview](screenshots/dashboard-overview.png)
+
+### 3. Expense Analytics
+![Expense Analytics and Audit Signals](screenshots/expense-analytics.png)
+
+### 4. Audit Review Queue
+![Transactions Requiring Review](screenshots/audit-review-queue.png)
+
+### 5. Transaction Details
+![Analysed Transactions and Audit Results](screenshots/transaction-details.png)
+
+### 6. Export Details
+![Audit Results](screenshots/export-details.png)
