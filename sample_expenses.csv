@@ -1,0 +1,42 @@
+expense_id,employee_id,expense_date,merchant,category,amount,currency,description
+EX1001,EMP101,2026-10-01,Metro Cab,Transport,850,INR,Client visit cab
+EX1002,EMP102,2026-10-01,Hotel Pearl,Accommodation,9800,INR,Client site stay
+EX1003,EMP103,2026-10-02,Cafe Central,Meals,650,INR,Team lunch
+EX1004,EMP101,2026-10-03,Metro Cab,Transport,850,INR,Client visit cab
+EX1005,EMP104,2026-10-03,Skyline Hotel,Accommodation,28750,INR,Conference stay
+EX1006,EMP105,2026-10-04,OfficeMart,Office Supplies,1750,INR,Stationery
+EX1007,EMP106,2026-10-04,CloudTools,Software,11999,INR,Monthly subscription
+EX1008,EMP107,2026-10-05,Quick Bites,Meals,420,INR,Working lunch
+EX1009,EMP108,2026-10-05,Airport Taxi,Transport,2200,INR,Airport transfer
+EX1010,EMP109,2026-10-06,TechStore,Office Supplies,7400,INR,Monitor adapter
+EX1011,EMP110,2026-10-06,City Hotel,Accommodation,7200,INR,One-night stay
+EX1012,EMP111,2026-10-07,Cafe Central,Meals,720,INR,Client coffee
+EX1013,EMP112,2026-10-07,RailConnect,Travel,2350,INR,Intercity train
+EX1014,EMP113,2026-10-08,CloudTools,Software,1990,INR,Add-on subscription
+EX1015,EMP114,2026-10-08,Premium Dining,Meals,6100,INR,Client dinner
+EX1016,EMP115,2026-10-09,OfficeMart,Office Supplies,890,INR,Notebooks
+EX1017,EMP116,2026-10-09,Metro Cab,Transport,560,INR,Office commute
+EX1018,EMP117,2026-10-10,AirFast,Travel,14200,INR,Domestic flight
+EX1019,EMP118,2026-10-10,Hotel Pearl,Accommodation,10500,INR,Project travel
+EX1020,EMP119,2026-10-11,Cafe Central,Meals,520,INR,Team breakfast
+EX1021,EMP120,2026-10-11,DataCloud,Software,17800,INR,Annual tool
+EX1022,EMP121,2026-10-12,Metro Cab,Transport,900,INR,Client visit
+EX1023,EMP122,2026-10-12,RailConnect,Travel,1850,INR,Intercity train
+EX1024,EMP123,2026-10-13,OfficeMart,Office Supplies,1250,INR,Printer paper
+EX1025,EMP124,2026-10-13,City Hotel,Accommodation,8700,INR,Project stay
+EX1026,EMP125,2026-10-14,Premium Dining,Meals,1850,INR,Team dinner
+EX1027,EMP126,2026-10-14,AirFast,Travel,13800,INR,Domestic flight
+EX1028,EMP127,2026-10-15,Metro Cab,Transport,610,INR,Office commute
+EX1029,EMP128,2026-10-15,CloudTools,Software,2450,INR,Monthly subscription
+EX1030,EMP129,2026-10-16,OfficeMart,Office Supplies,930,INR,Stationery
+EX1031,EMP130,2026-10-16,Cafe Central,Meals,780,INR,Client lunch
+EX1032,EMP131,2026-10-17,City Hotel,Accommodation,9100,INR,One-night stay
+EX1033,EMP132,2026-10-17,Metro Cab,Transport,720,INR,Client visit
+EX1034,EMP133,2026-10-18,RailConnect,Travel,2400,INR,Intercity train
+EX1035,EMP134,2026-10-18,TechStore,Office Supplies,3200,INR,Keyboard and mouse
+EX1036,EMP135,2026-10-19,Cafe Central,Meals,590,INR,Team lunch
+EX1037,EMP136,2026-10-19,CloudTools,Software,4990,INR,Subscription
+EX1038,EMP137,2026-10-20,Airport Taxi,Transport,2100,INR,Airport transfer
+EX1039,EMP138,2026-10-20,AirFast,Travel,15100,INR,Domestic flight
+EX1040,EMP139,2026-10-21,OfficeMart,Office Supplies,1100,INR,Stationery
+EX1041,EMP101,2026-10-01,Metro Cab,Transport,850,INR,Client visit cab - resubmitted
